@@ -1,0 +1,6 @@
+#FOLDERS TO IGNORE
+/css
+/images
+
+#FILES TO IGNORE
+.DS_Store
