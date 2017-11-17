@@ -10,3 +10,11 @@ function getTarget(e) {
 var el = document.getElementById('shoppingList');
 // if event listeners are supported
 if (el.addEventListener) {
+  el.addEventListener('click', function(e) {
+    itemDone(e);
+  }, false);
+} else {
+  el.attachEvent('onclick', function(e) {
+    itemDone(e);
+  });
+}
