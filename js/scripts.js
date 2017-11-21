@@ -31,8 +31,11 @@ function itemDone(e) {
 var el = document.getElementById('shoppingList');
 // if event listeners are supported
 if (el.addEventListener) {
+  // listen for a click anywhere on the shopping list element
   el.addEventListener('click', function(e) {
+    // call the itemDone function
     itemDone(e);
+    // use bubbling phase for event flow
   }, false);
 } else {
   el.attachEvent('onclick', function(e) {
