@@ -19,7 +19,7 @@ function itemDone(e) {
 
   // prevent the link from taking you away from the current page (default behavior)
   if (e.preventDefault) {
-    e.preventDefault;
+    e.preventDefault();
   } else {
     // for older versions of IE (lte IE8)
     e.returnValue = false;
